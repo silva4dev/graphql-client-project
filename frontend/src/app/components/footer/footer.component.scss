@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  background: #1f1f1f;
+  width: 100%;
+  padding: 25px;
+  justify-content: end;
+  align-items: center;
+  & p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+}
+
+.footer-icon {
+  font-size: 22px;
+  margin-left: 5px;
+  margin-right: 2px;
+}

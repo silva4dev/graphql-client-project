@@ -1,0 +1,60 @@
+.card {
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 400px;
+  height: max-content;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 3px solid transparent;
+  &:hover {
+    border: 3px solid #ff4081;
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+.card-header img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.card-content p {
+  margin-bottom: 0;
+}
+
+.users-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: "Quicksand", sans-serif;
+  & .users-details-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+  & .users-details-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+  & .users-details-posts-count {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
