@@ -1,0 +1,32 @@
+<section class="user-details" *ngIf="user">
+  <div class="user-details-info">
+    <div class="user-details-info-avatar">
+      <img ngxGravatar [email]=user.email [size]=250 />
+    </div>
+    <div class="user-details-info-about">
+      <div class="user-details-info-about-name">
+        <p>{{ user.name }}</p>
+      </div>
+      <div class="user-details-info-about-email">
+        <p>{{ user.email }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="user-details-posts">
+    <h1>Posts</h1>
+    <hr />
+    <ng-container *ngIf="user.posts.length > 0; else emptyPosts">
+      <mat-card class="card" *ngFor="let post of user.posts">
+        <mat-card-header class="card-header">
+          <h2>{{ post.title }}</h2>
+        </mat-card-header>
+        <mat-card-content class="card-content">
+          <p>{{ post.body }}</p>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+    <ng-template #emptyPosts>
+      <p class="user-details-posts-empty">There is no post ...</p>
+    </ng-template>
+  </div>
+</section>

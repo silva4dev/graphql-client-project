@@ -1,20 +1,24 @@
 <section class="users-details">
-  <mat-card class="card" *ngFor="let user of users">
-    <mat-card-header class="card-header">
-      <img ngxGravatar [email]=user.email [size]=200 />
-    </mat-card-header>
-    <mat-card-content class="card-content">
-      <div class="users-details-name">
-        <p>{{ user.name }}</p>
-      </div>
-      <div class="users-details-email">
-        <p>{{ user.email }}</p>
-      </div>
-      <hr />
-      <div class="users-details-posts-count">
-        <p>{{ user.postsCount}}</p>
-      </div>
-      <p></p>
-    </mat-card-content>
-  </mat-card>
+  <ng-container *ngFor="let user of users">
+    <a [routerLink]="['/users', user.id, 'posts']">
+      <mat-card class="card">
+        <mat-card-header class="card-header">
+          <img ngxGravatar [email]=user.email [size]=200 />
+        </mat-card-header>
+        <mat-card-content class="card-content">
+          <div class="users-details-name">
+            <p>{{ user.name }}</p>
+          </div>
+          <div class="users-details-email">
+            <p>{{ user.email }}</p>
+          </div>
+          <hr />
+          <div class="users-details-posts-count">
+            <p>{{ user.postsCount}}</p>
+          </div>
+          <p></p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </ng-container>
 </section>

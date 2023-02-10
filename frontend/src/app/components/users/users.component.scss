@@ -9,6 +9,7 @@
     border: 3px solid #ff4081;
     cursor: pointer;
     box-shadow: none;
+    color: #ff4081;
   }
 }
 
@@ -30,6 +31,7 @@
   margin-top: 40px;
   justify-content: center;
   margin-bottom: 50px;
+
   font-family: "Quicksand", sans-serif;
   & .users-details-name {
     display: flex;
@@ -56,5 +58,9 @@
     font-weight: bold;
     margin-top: 10px;
     font-size: 18px;
+  }
+  & a {
+    color: #000;
+    text-decoration: none;
   }
 }

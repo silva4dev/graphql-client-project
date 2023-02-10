@@ -1,0 +1,57 @@
+.user-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  justify-content: center;
+  gap: 80px;
+  margin: 40px;
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.user-details-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  & > .user-details-info-about {
+    margin-top: 10px;
+    & p {
+      margin-bottom: 10px;
+    }
+  }
+  & .user-details-info-about-name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  & .user-details-info-about-email {
+    font-size: 18px;
+  }
+}
+
+.user-details-posts h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.user-details-posts {
+  font-family: "Quicksand", sans-serif;
+  & .card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  & .card-content p {
+    font-size: 20px;
+  }
+}
+
+.user-details-posts-empty {
+  margin-top: 20px;
+  font-size: 22px;
+}

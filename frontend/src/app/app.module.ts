@@ -1,3 +1,4 @@
+import { UserComponent } from './components/user/user.component';
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AppRoutingModule } from './app-routing.module'
@@ -13,13 +14,13 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { MatIconModule } from '@angular/material/icon';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     NavbarComponent,
     FooterComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ export interface User {
   name: string
   email: string
   postsCount: number
+  posts?: any
 }
 
 
